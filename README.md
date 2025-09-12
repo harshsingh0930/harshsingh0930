@@ -1,4 +1,11 @@
-## Hi there 👋
+<h1 align="center"> This is me </h1>
+<br>
+<p align="center"><strong>
+	Name: Harsh Kumar (aka: Bankai or Harsh Singh)<br/><br/>
+	Interests: GPU, CPU, TPU, NPU and all other silicon architecture marvel:D<br/><br/>
+	Languages: English and Hindi<br/><br/>
+	Likes: Expermenting new LLMs
+</strong></p>
 
 <!--
 **harshsingh0930/harshsingh0930** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
