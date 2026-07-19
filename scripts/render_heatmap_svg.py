@@ -11,7 +11,7 @@ STEP, PAD, LEFT_LABEL_W, TOP_LABEL_H, TITLEBAR_H = CELL + GAP, 22, 30, 20, 30
 BG, BG2, FRAME, MUTED, ACCENT, GREEN, GOLD = "#0a0e14", "#0d1420", "#1f6feb", "#7d8590", "#22d3ee", "#39d353", "#f2cc60"
 
 # --- TIMING ---
-START_DELAY = 2.9   # Set to 2.9 seconds
+START_DELAY = 0
 COL_T, ROW_T, CELL_DUR = 0.035, 0.080, 0.65
 
 def level_for(count):
