@@ -1,6 +1,5 @@
 <div align="center">
-
-# Hey, I'm Harsh 👋
+# Hey, I'm Harsh
 ### aka Bankai / Harsh Singh
 
 <em>CS student • Systems & backend enthusiast • Open source tinkerer</em>
