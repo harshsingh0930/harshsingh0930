@@ -146,6 +146,7 @@ def render(data):
                 continue
             date_s, count, lvl = cell
             gy = grid_top + ri * STEP
+            START_DELAY = 5.0
             delay = ci * COL_T + ri * ROW_T
             plural = "s" if count != 1 else ""
             parts.append(
