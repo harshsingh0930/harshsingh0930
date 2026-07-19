@@ -23,7 +23,7 @@ COLORS = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"]
 GRAY = "#7d8590"
 MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
 
-START_DELAY = 4.0   # User requested 4 sec
+START_DELAY = 2.9   # Set to 2.9 seconds
 REVEAL_DUR, DUR = 4.0, 0.7
 
 n = len(contribs)
@@ -49,25 +49,17 @@ for i, c in enumerate(contribs):
     delay = round(START_DELAY + (wk + row*0.55)/maxorder * REVEAL_DUR, 3)
     rects.append(f'<rect class="c {"g" if lvl>=1 else "e"}" x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="{RAD}" fill="{COLORS[lvl]}" style="animation-delay:{delay}s"/>')
 
-svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" font-family="sans-serif" pointer-events="all">
+svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif">
 <style>
-  text.lbl {{ fill:{GRAY}; font-size:12px; font-weight:600; pointer-events:none; }}
-  text.total {{ fill:#e6edf3; font-size:14px; font-weight:700; pointer-events:none; }}
+  text.lbl {{ fill:{GRAY}; font-size:12px; font-weight:600; }}
+  text.total {{ fill:#e6edf3; font-size:14px; font-weight:700; }}
   .c {{ transform-box:fill-box; transform-origin:center; opacity:0; animation:pop {DUR}s ease-out both; }}
   .g {{ animation:pop {DUR}s ease-out both, flash {DUR+0.2}s ease-out both; }}
   
-  /* Aggressive Hover Fix */
-  svg:hover .c {{ 
-    opacity: 1 !important; 
-    animation: none !important; 
-    transform: scale(1) !important; 
-    filter: brightness(1) !important; 
-  }}
-
   @keyframes pop {{ 0%{{opacity:0;transform:scale(.3)}} 60%{{opacity:1;transform:scale(1.05)}} 100%{{opacity:1;transform:scale(1)}} }}
   @keyframes flash {{ 0%{{filter:brightness(2.2)}} 50%{{filter:brightness(2.2)}} 100%{{filter:brightness(1)}} }}
 </style>
-<rect width="{W}" height="{H}" fill="transparent"/>
+<rect width="{W}" height="{H}" fill="none"/>
 {''.join(labels)}
 {''.join(rects)}
 <text class="total" x="{LEFT}" y="{H-6}">{total:,} contributions in the last year</text>
