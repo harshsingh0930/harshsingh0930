@@ -37,6 +37,7 @@ GREEN = "#39d353"
 GOLD = "#f2cc60"
 
 # reveal timing (one-shot)
+START_DELAY = 15.0
 COL_T = 0.018   # per-column delay contribution (left -> right sweep)
 ROW_T = 0.045   # per-row delay contribution (top -> bottom cascade)
 CELL_DUR = 0.42
@@ -146,7 +147,6 @@ def render(data):
                 continue
             date_s, count, lvl = cell
             gy = grid_top + ri * STEP
-            START_DELAY = 5.0
             delay = START_DELAY + ci * COL_T + ri * ROW_T
             plural = "s" if count != 1 else ""
             parts.append(
