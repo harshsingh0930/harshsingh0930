@@ -12,7 +12,7 @@ BG, BG2, FRAME, MUTED, ACCENT, GREEN, GOLD = "#0a0e14", "#0d1420", "#1f6feb", "#
 
 # --- TIMING ---
 START_DELAY = 0
-COL_T, ROW_T, CELL_DUR = 0.035, 0.080, 0.65
+COL_T, ROW_T, CELL_DUR = 0.015, 0.020, 0.39
 
 def level_for(count):
     if count == 0: return 0
