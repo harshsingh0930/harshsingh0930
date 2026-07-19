@@ -23,7 +23,7 @@ COLORS = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"]
 GRAY = "#7d8590"
 MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
 
-START_DELAY = 2.9   # Set to 2.9 seconds
+START_DELAY = 1.0
 REVEAL_DUR, DUR = 4.0, 0.7
 
 n = len(contribs)
