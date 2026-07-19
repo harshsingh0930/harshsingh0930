@@ -30,13 +30,13 @@ ROWS = [
     ("sec", "Languages"),
     ("kv", "Programming", "C++, C, Java, Python"),
     ("kv", "Backend", "JavaScript, Node.js (Learning)"),
-    ("kv", "Database", "MySQL"),
+    ("kv", "Database", "MySQL, PostgresSQL"),
     ("kv", "Tools", "Git, GitHub, VS Code, Linux"),
     ("gap",),
     ("sec", "Currently"),
     ("bul", "Practicing DSA daily"),
     ("bul", "Learning Backend Development"),
-    ("bul", "Preparing for placements"),
+    ("bul", "Preparing to advance towards RAG"),
 ]
 
 
