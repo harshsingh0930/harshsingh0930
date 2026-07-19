@@ -20,12 +20,6 @@ Interested in computer architecture, backend systems, full-stack development, da
 <img src="https://raw.githubusercontent.com/harshsingh0930/harshsingh0930/master/contrib-heatmap.svg" width="860" alt="Harsh's GitHub Contribution Heatmap" />
 
 <br><br>
-
-<div align="center">
-  <a href="https://github.com/harshsingh0930?tab=repositories">
-    <img src="https://img.shields.io/badge/Projects-View%20Repos-24292f?style=for-the-badge&logo=github&logoColor=white" alt="View repositories" />
-  </a>
-</div>
 </div>
 
 ---
