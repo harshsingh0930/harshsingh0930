@@ -5,8 +5,7 @@ on:
     - cron: "17 6 * * *"
   workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: [main, master]
 
 permissions:
   contents: write
@@ -14,37 +13,29 @@ permissions:
 jobs:
   heatmap:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: |
-          pip install -r scripts/requirements.txt
+        run: pip install -r scripts/requirements.txt
 
       - name: Fetch contribution data
-        run: |
-          python scripts/fetch_contributions.py
+        run: python scripts/fetch_contributions.py
 
       - name: Generate animated heatmap
-        run: |
-          python scripts/generate_streak_svg.py harshsingh0930 contrib-heatmap.svg
+        run: python scripts/generate_streak_svg.py harshsingh0930 contrib-heatmap.svg
 
       - name: Generate info card
-        run: |
-          python scripts/make_info_card.py
+        run: python scripts/make_info_card.py
 
-      - name: Commit generated files
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore: refresh profile art [skip ci]"
-          file_pattern: |
-            data/contributions.json
-            contrib-heatmap.svg
-            info-card.svg
+      - name: Force Commit Everything
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore: refresh profile art" || echo "No changes to commit"
+          git push
