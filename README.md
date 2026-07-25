@@ -1,25 +1,21 @@
 <div align="center">
-  
-# Hey, I'm Harsh
-### aka Bankai / Harsh Kumar
 
-<em>CS student • Systems & backend enthusiast • Open source tinkerer</em>
+<table border="0">
+  <tr>
+    <td width="50%" align="left" valign="top">
+      <h1>Hey, I'm Harsh</h1>
+      <h3>aka Bankai / Harsh Kumar</h3>
+      <p><em>CS student • Systems & backend enthusiast • Open source tinkerer</em></p>
+      <p>Interested in computer architecture, backend systems, full-stack development, data analytics, and experimenting with new LLMs.</p>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <img src="https://raw.githubusercontent.com/harshsingh0930/harshsingh0930/master/info-card.svg" width="100%" alt="Harsh's Info Card" />
+    </td>
+  </tr>
+</table>
 
-<br>
+<img src="https://raw.githubusercontent.com/harshsingh0930/harshsingh0930/master/contrib-heatmap.svg" width="100%" alt="Harsh's GitHub Contribution Heatmap" />
 
-<p>
-Interested in computer architecture, backend systems, full-stack development, data analytics, and experimenting with new LLMs.
-</p>
-
-<br>
-
-<img src="https://raw.githubusercontent.com/harshsingh0930/harshsingh0930/master/info-card.svg" width="520" alt="Harsh's Info Card" />
-
-<br><br>
-
-<img src="https://raw.githubusercontent.com/harshsingh0930/harshsingh0930/master/contrib-heatmap.svg" width="860" alt="Harsh's GitHub Contribution Heatmap" />
-
-<br><br>
 </div>
 
 ---
